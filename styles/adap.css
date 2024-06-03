@@ -9,9 +9,6 @@
   main .about-me .about-me-container .about-me-desc img {
     max-width: 500px;
   }
-  main .about-me .about-me-container .about-me-desc .hero-right {
-    margin-top: 200px;
-  }
   main .about-me .about-me-container .about-me-desc .hero-right p {
     color: rgb(0, 0, 0);
     width: 70%;
@@ -23,7 +20,8 @@
     font-size: 40px;
   }
   main .portfolio .portfolio-container ul li a img {
-    max-width: 250px;
+    min-width: 0;
+    max-width: 300px;
   }
   main .portfolio .portfolio-container ul li h3 {
     font-size: 25px;
@@ -36,9 +34,6 @@
   }
   main .about-me .about-me-container .about-me-desc img {
     max-width: 350px;
-  }
-  main .about-me .about-me-container .about-me-desc .hero-right {
-    margin-top: 200px;
   }
   main .about-me .about-me-container .about-me-desc .hero-right p {
     font-size: 18px;
@@ -84,6 +79,9 @@
   }
 }
 @media (max-width: 1024px) {
+  main .about-me .about-me-container .about-me-desc {
+    flex-direction: column;
+  }
   main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
     max-width: 350px;
   }
@@ -94,7 +92,7 @@
     font-size: 20px;
   }
   main .portfolio .portfolio-container ul {
-    gap: 0;
+    justify-content: center;
   }
   main .portfolio .portfolio-container ul li {
     width: 40%;
@@ -129,11 +127,32 @@
     margin-top: 20px;
     padding: 20px;
   }
+  main .contact .contact-container {
+    display: block;
+  }
+  main .contact .contact-container .contact-info img {
+    max-width: 35%;
+  }
   main .reviews .reviews-container h2 {
     margin-left: 0;
   }
   main .reviews .reviews-container .reviews-block {
     gap: 20px;
+  }
+  footer .footer-container ul li {
+    margin-bottom: 15px;
+  }
+  footer .footer-container ul li a {
+    font-size: 20px;
+  }
+  footer .footer-container .footer-menu {
+    display: block;
+  }
+  footer .footer-container .footer-menu li {
+    margin-bottom: 15px;
+  }
+  footer .footer-container .footer-menu li a {
+    font-size: 20px;
   }
 }
 @media (max-width: 768px) {
@@ -144,18 +163,12 @@
     max-width: 250px;
     max-height: auto;
   }
-  main .about-me .about-me-container .about-me-desc .hero-right {
-    margin-top: 200px;
-  }
   main .about-me .about-me-container .about-me-desc .hero-right p {
     margin-top: 20px;
     font-size: 18px;
   }
   main nav {
     display: none;
-  }
-  main .advantages {
-    padding: 0 0 100px 0;
   }
   main .advantages .advantages-container .advantages-left img, main .advantages .advantages-container .advantages-right img {
     max-width: 270px;
@@ -176,13 +189,11 @@
     width: 80%;
   }
   main .contact .contact-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
+    display: block;
+    margin: 0 auto;
   }
   main .contact .contact-container .contact-info {
-    width: 40%;
+    width: 100%;
   }
   main .contact .contact-container .contact-info ul {
     margin-top: 150px;
@@ -195,7 +206,6 @@
     margin-bottom: 30px;
   }
   main .contact .contact-container .contact-info ul li a {
-    color: white;
     font-size: 22px;
     max-width: 80%;
   }
@@ -207,7 +217,7 @@
     display: none;
   }
   main .contact .contact-container .contact-form {
-    width: 40%;
+    margin: 0 auto;
     margin-top: 50px;
   }
   main .reviews .reviews-container {
@@ -224,21 +234,6 @@
   }
   main .reviews .reviews-container .reviews-block .review p {
     font-size: 17px;
-  }
-  footer .footer-container ul li {
-    margin-bottom: 15px;
-  }
-  footer .footer-container ul li a {
-    font-size: 20px;
-  }
-  footer .footer-container .footer-menu {
-    display: block;
-  }
-  footer .footer-container .footer-menu li {
-    margin-bottom: 15px;
-  }
-  footer .footer-container .footer-menu li a {
-    font-size: 20px;
   }
 }
 @media (max-width: 425px) {
@@ -264,7 +259,7 @@
     font-size: 18px;
   }
   main .advantages {
-    padding: 0 0 100px 0;
+    padding: 100px 0;
   }
   main .advantages .advantages-container {
     flex-direction: column-reverse;
@@ -283,6 +278,13 @@
   }
   main .advantages .advantages-container .advantages-left ul li li:last-child, main .advantages .advantages-container .advantages-right ul li li:last-child {
     margin-bottom: 50px;
+  }
+  main .advantages .advantages-container .advantages-left {
+    flex-direction: column-reverse;
+  }
+  main .portfolio .portfolio-container {
+    padding: 0;
+    margin: 0;
   }
   main .portfolio .portfolio-container ul {
     gap: 10px;
@@ -358,6 +360,22 @@
   main .reviews .reviews-container .reviews-block .review p {
     font-size: 17px;
   }
+  footer .footer-container ul li a {
+    font-size: 17px;
+  }
+  footer .footer-container .footer-menu {
+    gap: 0;
+  }
+  footer .footer-container .footer-menu ul li a img {
+    max-width: 35px;
+  }
+  footer .footer-container .footer-menu ul li a {
+    font-size: 15px;
+  }
+  footer .footer-container .footer-menu ul .footer-link a {
+    padding: 15px;
+    font-size: 17px;
+  }
 }
 @media (max-width: 320px) {
   header .header-container .carousel .carousel-inner .carousel-item p {
@@ -385,4 +403,4 @@
   main .advantages .advantages-container .advantages-left ul li li:last-child, main .advantages .advantages-container .advantages-right ul li li:last-child {
     margin-bottom: 50px;
   }
-}
+}/*# sourceMappingURL=adap.css.map */

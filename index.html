@@ -52,7 +52,6 @@
         </header>
     
     <main>
-
         <nav>
             <div class="nav-container">
                 <ul class="nav-menu">
@@ -76,8 +75,9 @@
 
             </div>
         </nav>
-
+        
         <section id="about-me" class="about-me" style="background: rgba(223, 214, 209);">
+            <div class="overlay"></div>
             <div class="about-me-container">
                 <h1>Let’s start a project together </h1>
                 <div class="about-me-desc">
@@ -86,7 +86,7 @@
                     </div>
                     <div class="hero-right">
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t</p>
-                        <img src="images/flowers.jpg" alt="">
+                        <img src="images/aboutme-img.png" alt="">
                     </div>
                 </div>
             </div>
@@ -96,8 +96,9 @@
         <section id="advantages" class="advantages" style="background: rgba(223, 214, 209);">
             <div class="advantages-container">
                 <div class="advantages-left">
-                    <img src="images/advantages-1.png" alt="">
-
+                    <ul>
+                        <img src="images/advantages-1.png" alt="">
+                    </ul>
                     <ul>
                         <li>
                             <h2>My advantages:</h2>
@@ -113,8 +114,7 @@
                                 </li>
                             </ul>
                         </li>
-        
-                        <li></li>
+
                     </ul>
                 </div>
 
@@ -136,12 +136,13 @@
                         </li>
                     </ul>
 
+                    
                     <img src="images/advantages-2.png" alt="">
                 </div>
             </div>
         </section>
 
-        <section id="portfolio" class="portfolio" style="background: #83746D;">
+        <section id="portfolio" class="portfolio" style="background: #ffffff;">
             <div class="portfolio-container">
                 <h2>Portfolio</h2>
                 <ul class="porfolio-block">
@@ -246,57 +247,158 @@
             <div class="services-container">
                 <div class="services-headline">
                     <h2>Full interior design service</h2>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also t</p>
                 </div>
-
+        
                 <div class="services-items">
                     <ul>
-                        <li>
-                            
-                            <img src="images/services.png" alt="">
+                        <li class="service-item">
+                            <a href="javascript:void(0)" data-popup="popupService">
+                                <img src="images/services.png" alt="">
+                            </a>
                             <p class="service-text">on me</p>
                             <p>Creation of a design project</p>
-                            <div class="overlay">The design project includes all technical drawings for construction teams and furniture makers, realistic visualizations in which all objects are real and possible to order, tables with a list of materials, furniture, lighting fixtures, with reference to contractors and stores. Cost 40 €/m2, first visit and measurement as a gift.</div>
                         </li>
-                        <li>
-                            
-                            <img src="images/services2.png" alt="">
+                        <li class="service-item">
+                            <a href="javascript:void(0)" data-popup="popupService2">
+                                <img src="images/services2.png" alt="">
+                            </a>
                             <p class="service-text">on me</p>
                             <p>Author's supervision</p>
-                            <div class="overlay">Includes control over the implementation of the design project, coordination of issues with the construction team, site visits (2-4 times a month), full online support. Does not include resolving issues related to the roughing stage of work (what type of plaster to choose or drywall, etc.). The cost depends on the volume of the object.</div>
                         </li>
-                        <li>
-                            
-                            <img src="images/services3.png" alt="">
+                        <li class="service-item">
+                            <a href="javascript:void(0)" data-popup="popupService3">
+                                <img src="images/services3.png" alt="">
+                            </a>
                             <p class="service-text">on me</p>
                             <p>Full support</p>
-                            <div class="overlay">Includes designer supervision, control of all work on site, furniture fittings, visits to showrooms, ordering materials and furniture, receiving materials on site, decoration, site visits (2-3 times a week), communication with all participants in the renovation, complete online and offline support. The cost depends on the volume of the object, the style of the interior and the required deadline.</div>
                         </li>
-                        <li>
-                            
-                            <img src="images/services4.png" alt="">
+                        <li class="service-item">
+                            <a href="javascript:void(0)" data-popup="popupService4">
+                                <img src="images/services4.png" alt="">
+                            </a>
                             <p class="service-text">on me</p>
                             <p>Furniture fittings and decoration</p>
-                            <div class="overlay">Includes drawing up a table with preliminary selection of items, selection of furniture and decor online/offline, visits to showrooms, communication with managers, acceptance of items on site, full online and offline support.
-                                Cost: 15% of the cost of the material + transportation costs, at the same time, you can count on the discounts that the contractor provides me (sometimes up to 30%).</div>
                         </li>
-                        <li>
-                            <img src="images/services5.png" alt="">
+                        <li class="service-item">
+                            <a href="javascript:void(0)" data-popup="popupService5">
+                                <img src="images/services5.png" alt="">
+                            </a>
                             <p class="service-text">on me</p>
                             <p>Individual Request</p>
-                            <div class="overlay">All for my clients</div>
                         </li>
-                        <li>
-                            <img src="images/services6.png" alt="">
+                        <li class="service-item">
+                            <a href="javascript:void(0)" data-popup="popupService6">
+                                <img src="images/services6.png" alt="">
+                            </a>
                             <p class="service-text">on me</p>
                             <p>Arrangement of apartment / house / villa for rent</p>
-                            <div class="overlay">You can also submit an individual request, we will be happy to implement it.
-                                For a detailed understanding of the process of implementing services, write to us via WhatsApp or email.
-                                </div>
                         </li>
                     </ul>
                 </div>
-
+        
+                <!-- PopUp Windows -->
+                <div id="popupService" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h3>Name of a Project</h3>
+                        <p>Here is some text accompanying the images for portfolio 2.</p>
+                        <div class="popup-gallery">
+                            <img src="images/carousel-1.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-2.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="popupService2" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h3>Name of a Project</h3>
+                        <p>Here is some text accompanying the images for portfolio 2.</p>
+                        <div class="popup-gallery">
+                            <img src="images/carousel-1.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-2.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/porfolio-5.png" alt="" onclick="openModal(this);">
+                            <img src="images/porfolio-6.png" alt="" onclick="openModal(this);">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="popupService3" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h3>Name of a Project</h3>
+                        <p>Here is some text accompanying the images for portfolio 2.</p>
+                        <div class="popup-gallery">
+                            <img src="images/carousel-1.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-2.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/porfolio-5.png" alt="" onclick="openModal(this);">
+                            <img src="images/porfolio-6.png" alt="" onclick="openModal(this);">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="popupService4" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h3>Name of a Project</h3>
+                        <p>Here is some text accompanying the images for portfolio 2.</p>
+                        <div class="popup-gallery">
+                            <img src="images/carousel-1.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-2.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="popupService5" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h3>Name of a Project</h3>
+                        <p>Here is some text accompanying the images for portfolio 2.</p>
+                        <div class="popup-gallery">
+                            <img src="images/carousel-1.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-2.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="popupService6" class="popup">
+                    <div class="popup-content">
+                        <span class="close">&times;</span>
+                        <h3>Name of a Project</h3>
+                        <p>Here is some text accompanying the images for portfolio 2.</p>
+                        <div class="popup-gallery">
+                            <img src="images/carousel-1.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-2.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-3.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                            <img src="images/carousel-4.jpg" alt="" onclick="openModal(this);">
+                        </div>
+                    </div>
+                </div>
+        
+                <div id="zoom-img" class="zoom-img">
+                    <span class="close-zoom">&times;</span>
+                    <img class="zoom-content" id="img01">
+                </div>
+        
                 <a class="services-link" href="#contact">Contact me</a>
             </div>
         </section>
@@ -313,7 +415,6 @@
                             <li><a href="">valetina_chirva</a></li>
                         </ul>
                     </div>
-                    <img src="images/contact.png" alt="">
                 </div>
 
                 <div class="contact-form">

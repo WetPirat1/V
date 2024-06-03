@@ -4,7 +4,7 @@ function toggleDropdown() {
     document.getElementById("dropdownMenu").classList.toggle("show");
 }
 // Закрытие выпадающего списка при клике вне его
-window.onclick = function(event) {
+window.onclick = function (event) {
     if (!event.target.matches('.dropdown button')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         for (var i = 0; i < dropdowns.length; i++) {
@@ -18,7 +18,7 @@ window.onclick = function(event) {
 
 
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     // Получаем все ссылки внутри .porfolio-item
     const portfolioLinks = document.querySelectorAll(".porfolio-item a");
 
@@ -34,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Добавляем обработчик события на все ссылки
     portfolioLinks.forEach(link => {
-        link.addEventListener("click", function(event) {
+        link.addEventListener("click", function (event) {
             event.preventDefault();
             const popupId = this.getAttribute("data-popup");
             openPopup(popupId);
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Закрываем PopUp при клике вне его содержимого
-    window.addEventListener("click", function(event) {
+    window.addEventListener("click", function (event) {
         document.querySelectorAll(".popup").forEach(popup => {
             if (event.target == popup) {
                 popup.style.display = "none";
@@ -61,16 +61,66 @@ function openModal(imgElement) {
     var modalImg = document.getElementById("img01");
     modal.style.display = "block";
     modalImg.src = imgElement.src;
-    
+
     var span = document.getElementsByClassName("close-zoom")[0];
-    span.onclick = function() {
-      modal.style.display = "none";
+    span.onclick = function () {
+        modal.style.display = "none";
     }
-  }
-  
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Получаем все ссылки внутри .service-item
+    const serviceLinks = document.querySelectorAll(".service-item a");
+
+    // Функция открытия PopUp
+    function openPopup(popupId) {
+        document.getElementById(popupId).style.display = "block";
+    }
+
+    // Функция закрытия PopUp
+    function closePopup(event) {
+        event.target.closest('.popup').style.display = "none";
+    }
+
+    // Добавляем обработчик события на все ссылки
+    serviceLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+            const popupId = this.getAttribute("data-popup");
+            openPopup(popupId);
+        });
+    });
+
+    // Добавляем обработчик события на все кнопки закрытия
+    document.querySelectorAll(".close").forEach(closeBtn => {
+        closeBtn.addEventListener("click", closePopup);
+    });
+
+    // Закрываем PopUp при клике вне его содержимого
+    window.addEventListener("click", function (event) {
+        document.querySelectorAll(".popup").forEach(popup => {
+            if (event.target == popup) {
+                popup.style.display = "none";
+            }
+        });
+    });
+});
+
+function openModal(imgElement) {
+    var modal = document.getElementById("zoom-img");
+    var modalImg = document.getElementById("img01");
+    modal.style.display = "block";
+    modalImg.src = imgElement.src;
+
+    var span = document.getElementsByClassName("close-zoom")[0];
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+}
 
 
-document.getElementById("myForm").addEventListener("submit", function(event) {
+
+document.getElementById("myForm").addEventListener("submit", function (event) {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var phone = document.getElementById("phone").value;
