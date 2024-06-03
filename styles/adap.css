@@ -70,6 +70,14 @@
   main .services .services-container .services-items ul li .service-text {
     font-size: 20px;
   }
+  main .services .services-container .zoom-img .zoom-content {
+    margin-top: 0;
+  }
+  main .services .services-container .zoom-img .close-zoom {
+    top: 8%;
+    right: 16%;
+    color: rgb(0, 0, 0);
+  }
   main .services .services-container a {
     margin-top: 20px;
     padding: 20px;
@@ -122,6 +130,16 @@
   }
   main .services .services-container .services-items ul li .overlay {
     font-size: 15px;
+  }
+  main .services .services-container .popup .popup-content {
+    margin-top: 13%;
+  }
+  main .services .services-container .zoom-img .zoom-content {
+    margin-top: 5%;
+  }
+  main .services .services-container .zoom-img .close-zoom {
+    top: 17%;
+    right: 13%;
   }
   main .services .services-container a {
     margin-top: 20px;
@@ -317,6 +335,20 @@
   }
   main .services .services-container .services-items ul li .overlay {
     font-size: 15px;
+  }
+  main .services .services-container .popup .popup-content {
+    margin: 0 auto;
+    margin-top: 13%;
+    width: 90%;
+  }
+  main .services .services-container .popup .popup-content .popup-gallery img {
+    width: 90%;
+  }
+  main .services .services-container .zoom-img .zoom-content {
+    margin-top: 45%;
+  }
+  main .services .services-container .zoom-img .close-zoom {
+    top: 31%;
   }
   main .services .services-container a {
     margin-top: 20px;

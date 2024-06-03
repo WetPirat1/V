@@ -508,7 +508,7 @@ main{
             .popup {
                 display: none; // Скрыто по умолчанию
                 position: fixed;
-                z-index: 9999;
+                z-index: 1;
                 left: 0;
                 top: 0;
                 width: 100%;

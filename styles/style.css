@@ -424,7 +424,7 @@ main .services .services-container .services-link:hover {
 main .services .services-container .popup {
   display: none;
   position: fixed;
-  z-index: 9999;
+  z-index: 1;
   left: 0;
   top: 0;
   width: 100%;
