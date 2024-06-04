@@ -54,7 +54,9 @@ header{
                         transform: translate(-50%, -50%);
 
                         font-size: 50px;
-                        color: #fff;
+                        color: #ffffff;
+
+                        font-weight: 400;
                     }
                 }
             }
@@ -68,6 +70,7 @@ main{
             .collapse{
                 ul{
                     margin: 0 auto;
+                    gap: 50px;
                     li{
                         a{
                             font-size: 20px;
@@ -598,7 +601,7 @@ main{
                 
                 margin-bottom: 300px;
                 ul{
-                    margin-top: 150px;
+                    margin-top: 120px;
                     li{
                         h3{
                             font-size: 40px;
@@ -645,7 +648,7 @@ main{
                         width: 85%;
                         padding: 25px;
                         margin-top: 5px;
-                        margin-bottom: 10px;
+                        margin-bottom: 15px;
                         box-sizing: border-box;
                         border-radius: 20px;
     
@@ -759,17 +762,19 @@ footer{
                     color: #000000;
                     gap: 50px;
                     font-size: 25px;
+                    transition: 1s;
                     img{
                         width: 40px;
                         height: auto;
-                        transition: 1s;
+                        transition: 0.6s;
                     }
                     img:hover{
                         width: 45px;
                     }
                 }
                 a:hover{
-                    font-size: 27px;
+                    transform: scale(1.2);
+                    font-size: 26px;
                 }
             }
         }
@@ -794,8 +799,10 @@ footer{
                     transition: 1s;
 
                     background-color: #DFD6D1;
+
                 }
                 a:hover {
+                    transform: scale(1);
                     background-color: #000000;
                     color: #DFD6D1;
                     font-size: 27px;
